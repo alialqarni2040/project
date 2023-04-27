@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: thesis-service-monitor
+  labels:
+    release: thesis
+spec:
+  selector:
+    matchLabels:
+      app: thesis-deployment
+  namespaceSelector:
+    matchNames:
+      - default
+  endpoints:
+  - port: https
+    interval: 30s

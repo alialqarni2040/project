@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.osx": {
+			"KUBECONFIG":"${workspaceFolder}/.kube/k8s-1-kubeconfig.yaml"
+		},
+		"terminal.integrated.env.windows": {
+			"KUBECONFIG": "${workspaceFolder}\\.kube\\k8s-1-kubeconfig.yaml"
+		},
+		"terminal.integrated.env.linux": {
+			"KUBECONFIG":"${workspaceFolder}/.kube/k8s-1-kubeconfig.yaml"
+		},
+}
+}
